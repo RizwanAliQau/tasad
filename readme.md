@@ -11,9 +11,9 @@ python ./main/test_seg_model.py --gpu_id 0 --model_name cas_seg_model_weights_mv
 
 
 # for training 
-    ## download mvtec dataset
+    - download mvtec dataset
         ## https://www.mvtec.com/company/research/datasets/mvtec-ad
-    ## download the texture dataset put inside anomaly source image 
+    - download the texture dataset put inside anomaly source image 
         ## https://www.robots.ox.ac.uk/~vgg/data/dtd/
 ## cas training 
 python ./main/cas_train.py --gpu_id 0 --gpu_id_validation 0 --obj_id -1 --lr 0.0001 --bs 1 --epochs 4000 --data_path ./data/ --anomaly_source_path ./anomlay_addition_data/ --checkpoint_path ./test_weights/ --log_path ./logs/ --checkpoint_cas_model "" --visualize True --class_name hazelnut --best_model_save_path ./best_weights_model_1/ 
