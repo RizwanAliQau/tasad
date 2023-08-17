@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    
+    {
+    
+        "name": "CAS training",
+        "type": "python",
+        "request": "launch",
+        "program": "./main/cas_train.py",
+        "console": "integratedTerminal",
+        "args": [
+            "--gpu_id",
+            "0",
+            "--gpu_id_validation",
+            "0",
+            "--obj_id",
+            "-1",
+            "--lr",
+            "0.0001",
+            "--bs",
+            "1",
+            "--epochs",
+            "4000",
+            "--data_path",
+            "/home/r/Desktop/essd/mvtec_anomaly_detection/", 
+            "--anomaly_source_path",
+            "/home/r/Desktop/essd/mvtec_anomaly_detection/hazelnut/train/",
+            "--checkpoint_path",
+            "./test_weights/",
+            "--log_path",
+            "./logs/",
+            "--checkpoint_cas_model",
+            "", //./best_weights_model_1/cas_seg_model_weights_mvtech_hazelnut_.pckl",
+            "--visualize",
+            "True",
+            "--class_name",
+            "hazelnut",
+            "--best_model_save_path",
+            "./best_weights_model_1/"
+
+        ],
+
+    }
+    {
+        "name": "FAS training",
+        "type": "python",
+        "request": "launch",
+        "program": "./main/fas_train.py",
+        "console": "integratedTerminal",
+        "args": [
+            "--train_gpu_id",
+            "0",
+            "--val_gpu_id",
+            "0",
+            "--obj_id",
+            "-1",
+            "--lr",
+            "0.0001",
+            "--bs",
+            "1",
+            "--epochs",
+            "4000",
+            "--data_path",
+            "/home/r/Desktop/essd/mvtec_anomaly_detection/", 
+            "--anomaly_source_path",
+            "/home/r/Desktop/essd/mvtec_anomaly_detection/hazelnut/train/",
+            //"--anomaly_type", 
+            //"0",
+            "--cas_model_path",
+            "./test_weights/",
+            "--checkpoint_path",
+            "./checkpoints/",
+            "--log_path",
+            "./logs/",
+            "--checkpoint_cas_weights",
+            "./test_weights/cas_seg_model_weights_mvtech_",
+            "--checkpoint_fas_weights",
+            "./test_weights/fas_seg_model_weights_mvtech_",
+            "--visualize",
+            "True",
+            "--class_name",
+            "hazelnut",
+            "--datatype",
+            "png"
+
+        ],
+
+    }
+    {
+        "name": "FASAD testing",
+        "type": "python",
+        "request": "launch",
+        "program": "./main/test_seg_model.py",
+        "console": "integratedTerminal",
+        "args": [
+            "--gpu_id",
+            "0",
+            "--model_name",
+            "cas_seg_model_weights_mvtech_",
+            "--data_path",
+            "/home/r/Desktop/essd/mvtec_anomaly_detection/",
+            "--checkpoint_path",
+            "./weights/", 
+            "--both_model",
+            "0",
+            "--obj_list_all",
+            //"toothbrush"
+            "carpet,grid,leather,tile,wood,bottle,capsule,pill,transistor,zipper,cable,hazelnut,metal_nut,screw,toothbrush", // metal_nut
+
+        ],
+
+    }
+]
+}
