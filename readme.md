@@ -3,8 +3,8 @@ conda create -n ENVNAME --file requirement.txt
 pip install -r requirement_pip.txt
 
 # for testing 
-    # download the weights
-        # https://drive.google.com/drive/folders/10Z0MNGY9codk0F-h59roTUr4Xeay2IPO?usp=share_link
+    - download the weights
+        - https://drive.google.com/drive/folders/10Z0MNGY9codk0F-h59roTUr4Xeay2IPO?usp=share_link
 
 ## tasad testing 
 python ./main/test_seg_model.py --gpu_id 0 --model_name cas_seg_model_weights_mvtech_ --data_path ./data/ --checkpoint_path ./weights/ --both_model 1 --obj_list_all carpet,grid,leather,tile,wood,bottle,capsule,pill,transistor,zipper,cable,hazelnut,metal_nut,screw,toothbrush 
