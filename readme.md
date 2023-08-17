@@ -1,4 +1,4 @@
-# create empty directories 
+# create directories 
     
     ├── best_weights_model_1
     ├── best_weights_model_2
