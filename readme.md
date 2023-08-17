@@ -1,6 +1,6 @@
 ## create conda environment
-conda create -n ENVNAME --file requirement.txt
-pip install -r requirement_pip.txt
+    conda create -n ENVNAME --file requirement.txt
+    pip install -r requirement_pip.txt
 
 # for testing 
     - download the weights
