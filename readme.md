@@ -1,3 +1,10 @@
+# TASAD workflow 
+![fasad_model](https://github.com/RizwanAliQau/tasad/assets/29249233/7090cb30-663a-4e6a-ae27-a35b2f65793e)
+
+# Novel SAIM (Superpixel based anomaly insertion method) -----> generates three different size of anomalies for model generalization
+[saim.pdf](https://github.com/RizwanAliQau/tasad/files/13509691/saim.pdf)
+[Uploading Size_of_anom.pdf…]()
+
 # create directories 
     
     ├── best_weights_model_1
