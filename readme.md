@@ -2,8 +2,12 @@
 ![fasad_model](https://github.com/RizwanAliQau/tasad/assets/29249233/7090cb30-663a-4e6a-ae27-a35b2f65793e)
 
 # Novel SAIM (Superpixel based anomaly insertion method) -----> generates three different size of anomalies for model generalization
-[saim.pdf](https://github.com/RizwanAliQau/tasad/files/13509691/saim.pdf)
-[Uploading Size_of_anom.pdf…]()
+### The pseudo-anomaly insertion by the proposed SAIM
+![saim-1](https://github.com/RizwanAliQau/tasad/assets/29249233/88ffd8aa-ed87-4da0-9e0b-cf55e4f80b4c)
+
+### Example of pseudo-anomaly insertion by SAIM: generates different sizes of anomalies i.e., small, medium and large by controlling the number of segments of anomaly source image.
+![Size_of_anom-1](https://github.com/RizwanAliQau/tasad/assets/29249233/371e2bf9-9c8a-44d7-98e3-8e8823fd4b71)
+
 
 # create directories 
     
