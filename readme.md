@@ -41,6 +41,7 @@
 # fas training 
     python ./main/fas_train.py --train_gpu_id 0 --val_gpu_id 0 --obj_id -1 --lr 0.0001 --bs 1 --epochs 4000 --data_path ./data/ --anomaly_source_path ./anomlay_addition_data/ --cas_model_path ./test_weights/ --checkpoint_path ./checkpoints/ --log_path ./logs/ --checkpoint_cas_weights ./test_weights/cas_seg_model_weights_mvtech_ --checkpoint_fas_weights ./test_weights/fas_seg_model_weights_mvtech_ --visualize True --class_name hazelnut --datatype png 
 # to cite our work
+```
 @article{shah2023two,
   title={Two-stage coarse-to-fine image anomaly segmentation and detection model},
   author={Shah, Rizwan Ali and Urmonov, Odilbek and Kim, HyungWon},
@@ -50,7 +51,7 @@
   year={2023},
   publisher={Elsevier}
 }
-​
+​```
 Auto
 
 ##### ----- #### 
